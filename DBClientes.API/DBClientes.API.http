@@ -1,0 +1,6 @@
+@DBClientes.API_HostAddress = http://localhost:5077
+
+GET {{DBClientes.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

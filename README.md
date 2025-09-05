@@ -4,7 +4,7 @@
 
 API RESTful desarrollada en .NET 8 para la gestión de clientes con arquitectura por capas y base de datos SQL Server.
 
-## 📦 Tecnologías Utilizadas
+## Tecnologías Utilizadas
 
 - **.NET 8**
 - **Entity Framework Core 8**

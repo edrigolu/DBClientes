@@ -1,6 +1,6 @@
 # DBClientes
 
-# 🚀 API de Gestión de Clientes - Backend
+#  API de Gestión de Clientes - Backend
 
 API RESTful desarrollada en .NET 8 para la gestión de clientes con arquitectura por capas y base de datos SQL Server.
 
@@ -11,7 +11,7 @@ API RESTful desarrollada en .NET 8 para la gestión de clientes con arquitectura
 - **SQL Server 2019**
 - **Swagger/OpenAPI**
 
-## 🏗️ Arquitectura
+##  Arquitectura
 DBClientesSolution/
 ├── DBClientes.API/ # Capa de presentación
 ├── DBClientes.Services/ # Lógica de negocio
@@ -20,10 +20,12 @@ DBClientesSolution/
 └── DBClientes.DTOs/ # Objetos transferencia
 
 
-## 📊 Base de Datos
+##  Base de Datos
 
 ### Script de creación:
-```sql
+## SQL
+## Copiar script y ejecutar en SSMS
+
 CREATE DATABASE DBClientes;
 GO
 
@@ -64,7 +66,7 @@ FROM Clientes  WHERE Identificacion = @Identificacion;
 END
 GO
 
-🚀 Instalación y Ejecución
+Instalación y Ejecución
 Prerrequisitos
 .NET 8 SDK
 
@@ -135,7 +137,7 @@ Repository Pattern
 
 Separación de responsabilidades
 
-📊 Swagger Documentación
+Swagger Documentación
 La documentación interactiva está disponible en:
 
 https://localhost:44324/swagger/index.html

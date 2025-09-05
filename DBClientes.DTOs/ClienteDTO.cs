@@ -3,6 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace DBClientes.DTOs
 {
+
     [SwaggerSchema("DTO para representar un cliente")]
     public class ClienteDTO
     {

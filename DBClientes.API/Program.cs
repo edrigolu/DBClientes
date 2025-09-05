@@ -20,8 +20,7 @@ builder.Services.AddSwaggerGen(options =>
         Description = "API para gestión de clientes",
         Contact = new OpenApiContact
         {
-            Name = "Edwin Ricardo Gonzalez Luque",
-            Email = "edwin.gonzalezluque@gmail.com"
+            Name = "Edwin Ricardo Gonzalez Luque"
         }
     });
 

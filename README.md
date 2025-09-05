@@ -46,7 +46,23 @@ CREATE PROCEDURE spObtenerClientePorIdentificacion
     @Identificacion VARCHAR(20)
 AS
 BEGIN
-    SELECT * FROM Clientes WHERE Identificacion = @Identificacion;
+    SELECT 
+    IdCliente, 
+    Identificacion, 
+    Nombre, 
+    Apellido, 
+    Email, 
+    FechaCreacion, 
+    FechaActualizacion
+FROM Clientes  WHERE Identificacion = @Identificacion;
 END
 GO
+
+🚀 Instalación y Ejecución
+Prerrequisitos
+.NET 8 SDK
+
+SQL Server 2019+
+
+Visual Studio 2022 o VS Code
 

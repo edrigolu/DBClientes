@@ -118,7 +118,8 @@ json
   "fechaCreacion": "2025-09-04T16:14:25.1666667",
   "fechaActualizacion": "2025-09-04T16:14:25.1666667"
 }
-🔧 Desarrollo
+
+Desarrollo
 Estructura de capas:
 API: Controladores y endpoints
 

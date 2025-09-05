@@ -41,7 +41,7 @@ CREATE TABLE Clientes (
 );
 GO
 
--- Insertar datos de ejemplo
+
 INSERT INTO Clientes (Identificacion, Nombre, Apellido, Email) VALUES
 ('12345678A', 'Juan', 'Pérez', 'juan.perez@email.com'),
 ('87654321B', 'María', 'Gómez', 'maria.gomez@email.com'),

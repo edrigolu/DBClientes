@@ -135,7 +135,7 @@ Repository Pattern
 
 Separación de responsabilidades
 
-📊 Swagger Documentation
+📊 Swagger Documentación
 La documentación interactiva está disponible en:
 
 https://localhost:44324/swagger/index.html

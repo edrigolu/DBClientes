@@ -41,6 +41,7 @@ CREATE TABLE Clientes (
     FechaCreacion DATETIME2 DEFAULT GETDATE(),
     FechaActualizacion DATETIME2 DEFAULT GETDATE()
 );
+
 GO
 
 
@@ -48,6 +49,7 @@ INSERT INTO Clientes (Identificacion, Nombre, Apellido, Email) VALUES
 ('12345678A', 'Juan', 'Pérez', 'juan.perez@email.com'),
 ('87654321B', 'María', 'Gómez', 'maria.gomez@email.com'),
 ('11223344C', 'Carlos', 'López', 'carlos.lopez@email.com');
+
 GO
 
 CREATE PROCEDURE spObtenerClientePorIdentificacion

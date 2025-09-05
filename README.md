@@ -10,7 +10,6 @@ API RESTful desarrollada en .NET 8 para la gestión de clientes con arquitectura
 - **Entity Framework Core 8**
 - **SQL Server 2019**
 - **Swagger/OpenAPI**
-- **Docker** (opcional)
 
 ## 🏗️ Arquitectura
 DBClientesSolution/

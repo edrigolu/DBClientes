@@ -104,7 +104,7 @@ json
 bash
 dotnet run --project DBClientes.API
 
-📚 API Endpoints
+API Endpoints
 GET /api/clientes/{identificacion}
 Obtiene un cliente por número de identificación.
 

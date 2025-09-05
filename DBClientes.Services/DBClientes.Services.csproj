@@ -6,4 +6,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\DBClientes.DTOs\DBClientes.DTOs.csproj" />
+    <ProjectReference Include="..\DBClientes.Models\DBClientes.Models.csproj" />
+    <ProjectReference Include="..\DBClientes.Repositories\DBClientes.Repositories.csproj" />
+  </ItemGroup>
+
 </Project>

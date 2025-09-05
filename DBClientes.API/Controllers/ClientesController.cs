@@ -1,6 +1,7 @@
 ﻿using DBClientes.DTOs;
 using DBClientes.Services;
 using Microsoft.AspNetCore.Mvc;
+using Swashbuckle.AspNetCore.Annotations;
 
 namespace DBClientes.API.Controllers
 {
@@ -16,7 +17,15 @@ namespace DBClientes.API.Controllers
         }
 
         [HttpGet("{identificacion}")]
-        public async Task<IActionResult> ObtenerClientePorIdentificacion(string identificacion)
+        [SwaggerOperation( // Documentación Swagger
+            Summary = "Obtiene un cliente por número de identificación",
+            Description = "Retorna los datos completos del cliente si existe, o 404 si no se encuentra",
+            OperationId = "GetClienteByIdentificacion",
+            Tags = new[] { "Clientes" })]
+        [SwaggerResponse(200, "Cliente encontrado", typeof(ClienteDTO))]
+        [SwaggerResponse(404, "Cliente no encontrado")]
+        [SwaggerResponse(500, "Error interno del servidor")]
+        public async Task<IActionResult> ObtenerClientePorIdentificacion([SwaggerParameter("Número de identificación del cliente", Required = true)] string identificacion)
         {
             ClienteDTO cliente = await _clienteService.ObtenerClientePorIdentificacion(identificacion);
 

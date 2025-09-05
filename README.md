@@ -20,3 +20,33 @@ DBClientesSolution/
 ├── DBClientes.Models/ # Entidades EF Core
 └── DBClientes.DTOs/ # Objetos transferencia
 
+
+## 📊 Base de Datos
+
+### Script de creación:
+```sql
+CREATE DATABASE DBClientes;
+GO
+
+USE DBClientes;
+GO
+
+CREATE TABLE Clientes (
+    IdCliente INT IDENTITY(1,1) PRIMARY KEY,
+    Identificacion VARCHAR(20) NOT NULL UNIQUE,
+    Nombre VARCHAR(100) NOT NULL,
+    Apellido VARCHAR(100) NOT NULL,
+    Email VARCHAR(255) NOT NULL,
+    FechaCreacion DATETIME2 DEFAULT GETDATE(),
+    FechaActualizacion DATETIME2 DEFAULT GETDATE()
+);
+GO
+
+CREATE PROCEDURE spObtenerClientePorIdentificacion
+    @Identificacion VARCHAR(20)
+AS
+BEGIN
+    SELECT * FROM Clientes WHERE Identificacion = @Identificacion;
+END
+GO
+
